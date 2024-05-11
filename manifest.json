@@ -9,7 +9,7 @@
       "src": "/assets/icons/128port-icon.svg",
       "sizes": "128x128",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "/assets/icons/144port-icon.svg",
@@ -29,9 +29,15 @@
     {
       "src": "/assets/icons/512port-icon.svg",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/512port-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "background_color": "#132031",
-  "theme_color": "#4f7da0"
+  "theme_color": "#000"
 }
