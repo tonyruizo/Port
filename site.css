@@ -61,6 +61,10 @@ a:link {
   min-height: 5rem;
 }
 
+.mail-icon {
+  display: none;
+}
+
 @media screen and (min-width: 360px) {
   .avatar-img img {
     height: 20rem;
@@ -70,11 +74,24 @@ a:link {
   .card {
     width: 18rem;
   }
+
+  .mail-icon {
+    height: 3rem;
+    width: 3rem;
+    top: -10px;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .card {
     width: 13rem;
+  }
+
+  .mail-icon {
+    height: 5rem;
+    width: 5rem;
+    top: 0;
   }
 }
 
