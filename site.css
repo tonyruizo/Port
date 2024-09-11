@@ -16,9 +16,11 @@ a:link {
   cursor: pointer;
   background-color: rgba(220, 220, 220, 0.158);
 }
+
 .avatar-img img {
-  height: 15.5rem;
-  width: 15.5rem;
+  height: 10.5rem;
+  width: 10.5rem;
+  object-fit: contain;
 }
 
 .container {
@@ -56,6 +58,8 @@ a:link {
   width: 12.9rem;
   height: 12.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  /* object-fit: fill; */
+  object-fit: cover;
 }
 
 .card-title {
@@ -135,5 +139,4 @@ a:link {
   }
 }
 
-@media screen and (min-width: 991px) {
-}
+@media screen and (min-width: 991px) {}
