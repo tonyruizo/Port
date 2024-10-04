@@ -42,35 +42,61 @@
     <header>
       <div class="container container-header pt-5">
         <div class="row mt-5">
-          <div class="col-md-6">
-            <h1 class="py-2 text-left">Tony Ruiz</h1>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="col-md-6 d-flex flex-column">
+            <h1 class="text-left">Tony Ruiz</h1>
             <p>
-              Software Engineering student at
-              <a href="https://www.wgu.edu/" target="_blank">WGU</a>.
+              Software Engineering student at Western Governors University
+              <a href="https://www.wgu.edu/" target="_blank">(WGU)</a>.
             </p>
             <p>
-              I am passionate about using my coding skills to make a positive
-              impact on the world through innovative technology solutions.
+              Eager to continuously learn and grow, I strive to apply my
+              knowledge to real-world challenges and aim to make a meaningful
+              impact through innovative software solutions.
             </p>
-          </div>
-          <div class="col-md-6 text-center">
-            <div class="avatar-img">
-              <img src="assets/profile.webp" alt="Profile Picture" />
+            <div class="social-icons">
+              <a href="mailto:tonyruizo@pm.me"
+                ><i
+                  class="fa-regular fa-solid fa-envelope text-dark"
+                  style="font-size: 24px"
+                  aria-label="Email Message"
+                ></i
+              ></a>
+
+              <a href="https://linkedin.com/in/tonyruizo" target="_blank"
+                ><i
+                  class="fa-brands fa-linkedin text-dark"
+                  style="font-size: 24px"
+                  aria-label="LinkedIn Connection"
+                ></i
+              ></a>
             </div>
+          </div>
+          <div
+            class="col-md-6 pt-md-0 pt-5 d-flex flex-column justify-content-center presentation-background"
+          >
+            <div class="background-header">
+              <h3 class="pb-2">Background</h3>
+            </div>
+            <img src="assets/HVAC.svg" alt="Circular presentation" />
           </div>
         </div>
       </div>
     </header>
-    <main class="pb-5">
+    <main class="py-5">
       <div class="container">
         <!-- Skills Section -->
-        <!-- <section class="pb-5">
-          <div class="skills">
+        <section class="pb-5">
+          <div class="row">
+            <div class="experience-header">
+              <h3 class="pb-2">Experience</h3>
+            </div>
+            <div
+              class="col-12 d-flex flex-column justify-content-center presentation-dev"
+            >
+              <img src="assets/dev.svg" alt="Circular presentation" />
+            </div>
+          </div>
+          <!-- <div class="skills mt-5">
             <div class="skills-header"><h3 class="pb-2">Details</h3></div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -184,7 +210,7 @@
                       src="https://www.iconshock.com/image/Diamond/Database/microsoft_sql_server"
                       alt="SQL Server Icon"
                     />
-                    &nbsp;SQL Server
+                    &nbsp;SQL
                   </div>
                   <div
                     class="box border rounded p-1 m-1 d-flex align-items-center"
@@ -222,10 +248,10 @@
                 <div class="boxes-container container d-flex pt-3">Test</div>
               </div>
             </div>
-          </div>
-        </section> -->
+          </div> -->
+        </section>
         <!-- Projects Sections -->
-        <section class="py-5">
+        <section class="py-3 pb-2">
           <div class="projects">
             <div class="projects-header"><h3 class="pb-2">Projects</h3></div>
             <ul class="nav nav-tabs" id="myTab2" role="tablist">
@@ -243,7 +269,7 @@
                   Recent
                 </button>
               </li>
-              <!-- <li class="nav-item" role="presentation">
+              <li class="nav-item" role="presentation">
                 <button
                   class="nav-link text-dark"
                   id="profile-tab"
@@ -254,9 +280,9 @@
                   aria-controls="profile"
                   aria-selected="false"
                 >
-                  Profile
+                  Contributions
                 </button>
-              </li> -->
+              </li>
             </ul>
             <div class="tab-content" id="myTabContent2">
               <div
@@ -265,73 +291,149 @@
                 role="tabpanel"
                 aria-labelledby="recent-tab"
               >
-                <div class="boxes-container container pt-3">
-                  <div class="row">
-                    <div class="col d-flex justify-content-center py-2">
-                      <div class="card">
-                        <img
-                          src="assets/projects/ansoniidigital.webp"
-                          class="card-img-top bg-white"
-                          alt="Ansonii Digital Project"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Ansonii Digital</h4>
-                          <p class="card-text">
-                            <!-- <span class="text-danger">[Under Development]</span> -->
-                            <!-- ASP.NET Core Razor Pages | Azure SQL -->
-                          </p>
-                          <a
-                            href="https://ansoniidigital.com"
-                            target="_blank"
-                            class="btn btn-dark"
-                            >See Live</a
-                          >
+                <div
+                  id="projectsCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#projectsCarousel"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#projectsCarousel"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                  </div>
+
+                  <!-- Carousel Items (Slides) -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-8 mx-auto">
+                          <div class="row">
+                            <!-- Project 1 -->
+                            <div class="col d-flex justify-content-center py-2">
+                              <div class="card">
+                                <img
+                                  src="assets/projects/ansoniidigital.webp"
+                                  class="card-img-top bg-white"
+                                  alt="Ansonii Digital Project"
+                                />
+                                <div class="card-body">
+                                  <h4 class="card-title">Ansonii Digital</h4>
+                                  <a
+                                    href="https://ansoniidigital.com"
+                                    target="_blank"
+                                    class="btn btn-dark"
+                                    >See Live</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Project 2 -->
+                            <div class="col d-flex justify-content-center py-2">
+                              <div class="card">
+                                <img
+                                  src="/assets/projects/snapflashweb.png"
+                                  class="card-img-top bg-white"
+                                  alt="Snap Flash Website"
+                                />
+                                <div class="card-body">
+                                  <h4 class="card-title">Photo Booth Rental</h4>
+                                  <a
+                                    href="https://witty-cliff-05e1a1c0f.5.azurestaticapps.net"
+                                    target="_blank"
+                                    class="btn btn-dark"
+                                    >See Live</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Project 3 -->
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col d-flex justify-content-center py-2">
-                      <div class="card">
-                        <img
-                          src="/assets/projects/snapflashweb.png"
-                          class="card-img-top bg-white"
-                          alt="Snap Flash Website"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Photo Booth Rental</h4>
-                          <p class="card-text"></p>
-                          <a
-                            href="https://witty-cliff-05e1a1c0f.5.azurestaticapps.net"
-                            target="_blank"
-                            class="btn btn-dark"
-                            >See Live</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col d-flex justify-content-center py-2">
-                      <div class="card">
-                        <img
-                          src="/assets/projects/greatmeets.png"
-                          class="card-img-top bg-white"
-                          alt="Great Meets Website"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Great Meets</h4>
-                          <p class="card-text">
-                            <!-- ASP.NET Web Forms | SQL Server -->
-                          </p>
-                          <a
-                            href="https://greatmeets.com"
-                            target="_blank"
-                            class="btn btn-dark"
-                            >See Live</a
-                          >
+                    <!-- Add more slides here if needed -->
+                    <!-- Slide 2 (Add more cards here) -->
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-8 mx-auto">
+                          <div class="row">
+                            <!-- Add another set of 3 cards -->
+                            <div class="col d-flex justify-content-center py-2">
+                              <div class="card">
+                                <img
+                                  src=""
+                                  class="card-img-top bg-white"
+                                  alt="Coming soon"
+                                />
+                                <div class="card-body">
+                                  <h4 class="card-title">Coming Soon</h4>
+                                  <a
+                                    href=""
+                                    target="_blank"
+                                    class="btn btn-dark disabled"
+                                    >See Live</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Another project -->
+                            <div class="col d-flex justify-content-center py-2">
+                              <div class="card">
+                                <img
+                                  src=""
+                                  class="card-img-top bg-white"
+                                  alt="Coming Soon"
+                                />
+                                <div class="card-body">
+                                  <h4 class="card-title">Coming Soon</h4>
+                                  <a
+                                    href=""
+                                    target="_blank"
+                                    class="btn btn-dark disabled"
+                                    >See Live</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  <!-- Carousel Controls -->
+                  <!-- Carousel Controls with Font Awesome Arrows -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fa-solid fa-arrow-left fa-2x text-dark"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#projectsCarousel"
+                    data-bs-slide="next"
+                  >
+                    <i class="fa-solid fa-arrow-right fa-2x text-dark"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
               <div
@@ -340,89 +442,88 @@
                 role="tabpanel"
                 aria-labelledby="profile-tab"
               >
-                ...
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Contact section -->
-        <section class="pb-5">
-          <div class="contact">
-            <div class="projects-header">
-              <h3 class="pb-2">Send me a message</h3>
-            </div>
-            <hr />
-            <div
-              class="form-body d-flex justify-content-center align-items-center pt-3"
-            >
-              <div class="row w-100">
                 <div
-                  class="col-md-6 d-flex flex-column text-center justify-content-center align-center"
-                  style="position: relative"
+                  id="projectsCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
                 >
-                  <img
-                    src="assets/bg/mail.svg"
-                    style="position: absolute"
-                    class="mail-icon"
-                    alt="Email Icon"
-                  />
-                  <p>I'll reply as soon as I can!</p>
-                  <p>Other ways to communicate with me:</p>
-                  <div class="social-icons">
-                    <a href="mailto:tonyruizo@pm.me"
-                      ><i
-                        class="fa-regular fa-solid fa-envelope text-dark"
-                        style="font-size: 24px"
-                        aria-label="Email Message"
-                      ></i
-                    ></a>
-
-                    <a href="https://linkedin.com/in/tonyruizo" target="_blank"
-                      ><i
-                        class="fa-brands fa-linkedin"
-                        style="font-size: 24px"
-                        aria-label="LinkedIn Connection"
-                      ></i
-                    ></a>
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#projectsCarousel"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#projectsCarousel"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <iframe
-                    data-tally-src="https://tally.so/embed/wblg6o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                    loading="lazy"
-                    width="100%"
-                    height="200"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
-                    title="Contact form
-"
-                  ></iframe>
-                  <script>
-                    var d = document,
-                      w = "https://tally.so/widgets/embed.js",
-                      v = function () {
-                        "undefined" != typeof Tally
-                          ? Tally.loadEmbeds()
-                          : d
-                              .querySelectorAll(
-                                "iframe[data-tally-src]:not([src])"
-                              )
-                              .forEach(function (e) {
-                                e.src = e.dataset.tallySrc;
-                              });
-                      };
-                    if ("undefined" != typeof Tally) v();
-                    else if (
-                      d.querySelector('script[src="' + w + '"]') == null
-                    ) {
-                      var s = d.createElement("script");
-                      (s.src = w),
-                        (s.onload = v),
-                        (s.onerror = v),
-                        d.body.appendChild(s);
-                    }
-                  </script>
+
+                  <!-- Carousel Items (Slides) -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-8 mx-auto">
+                          <div class="row">
+                            <!-- Project 3 -->
+                            <div class="col d-flex justify-content-center py-2">
+                              <div class="card">
+                                <img
+                                  src="/assets/projects/greatmeets.png"
+                                  class="card-img-top bg-white"
+                                  alt="Great Meets Website"
+                                />
+                                <div class="card-body">
+                                  <h4 class="card-title">Great Meets</h4>
+                                  <a
+                                    href="https://greatmeets.com"
+                                    target="_blank"
+                                    class="btn btn-dark"
+                                    >See Live</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Add more slides here if needed -->
+                    <!-- Slide 2 (Add more cards here) -->
+                    <!-- <div class="carousel-item">
+                      <div class="row">
+                        
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <!-- Carousel Controls -->
+                  <!-- Carousel Controls with Font Awesome Arrows -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fa-solid fa-arrow-left fa-2x text-dark"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#projectsCarousel"
+                    data-bs-slide="next"
+                  >
+                    <i class="fa-solid fa-arrow-right fa-2x text-dark"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>
